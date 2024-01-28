@@ -9,10 +9,15 @@
         <module name="c322-spring2024-homework2" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="c322-spring2024-homework2 (1)" target="1.5" />
+      <module name="c322-spring2024-homework2 (2)" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="c322-spring2024-homework2" options="-parameters" />
+      <module name="c322-spring2024-homework2 (2)" options="-parameters" />
     </option>
   </component>
 </project>
