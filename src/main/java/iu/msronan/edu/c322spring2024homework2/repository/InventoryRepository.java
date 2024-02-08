@@ -25,11 +25,11 @@ public class InventoryRepository {
         return guitars.stream()
                 .filter(guitar -> (searchCriteria.getSerialNumber() == null || guitar.getSerialNumber().equals(searchCriteria.getSerialNumber())) &&
                         (searchCriteria.getPrice() == 0 || guitar.getPrice() == searchCriteria.getPrice()) &&
-                        (searchCriteria.getBuilder() == null || guitar.getBuilder().equals(searchCriteria.getBuilder())) &&
+                        (searchCriteria.getBuilder() == null || guitar.getBuilder() == searchCriteria.getBuilder()) &&
                         (searchCriteria.getModel() == null || guitar.getModel().equals(searchCriteria.getModel())) &&
-                        (searchCriteria.getType() == null || guitar.getType().equals(searchCriteria.getType())) &&
-                        (searchCriteria.getBackWood() == null || guitar.getBackWood().equals(searchCriteria.getBackWood())) &&
-                        (searchCriteria.getTopWood() == null || guitar.getTopWood().equals(searchCriteria.getTopWood())))
+                        (searchCriteria.getType() == null || guitar.getType() == searchCriteria.getType()) &&
+                        (searchCriteria.getBackWood() == null || guitar.getBackWood() == searchCriteria.getBackWood()) &&
+                        (searchCriteria.getTopWood() == null || guitar.getTopWood() == searchCriteria.getTopWood()))
                 .collect(Collectors.toList());
     }
 }
