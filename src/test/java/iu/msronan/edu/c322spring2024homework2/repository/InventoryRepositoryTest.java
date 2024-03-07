@@ -13,8 +13,8 @@ class InventoryRepositoryTest {
     @Test
     void addGuitar() {
         repository = new InventoryRepository();
-
         Guitar guitar = new Guitar("111", 1000.0, Guitar.Builder.COLLINGS, "Model1", Guitar.Type.ACOUSTIC, Guitar.Wood.MAHOGANY, Guitar.Wood.ALDER);
+
         repository.addGuitar(guitar);
 
         Guitar found = repository.getGuitar("111");
